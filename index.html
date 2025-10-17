@@ -26,9 +26,7 @@
                     }
                 });
                 document.getElementById('markdown-output').innerHTML = html;
-                document.querySelectorAll('pre code').forEach((block) => {
-                    hljs.highlightElement(block);
-                });
+                hljs.highlightAll();
             });
     </script>
 </body>
